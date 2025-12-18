@@ -1,0 +1,53 @@
+{
+  "moods": {
+    "work": {
+      "label": "Focused",
+      "types": ["cafe", "restaurant", "library", "coworking_space"],
+      "minRating": 4.0,
+      "priceRange": [1, 3],
+      "timePreference": ["morning", "afternoon"]
+    },
+    "date": {
+      "label": "Romantic",
+      "types": ["restaurant", "cafe", "bar", "movie_theater", "park", "art_gallery"],
+      "minRating": 4.2,
+      "priceRange": [2, 4],
+      "timePreference": ["evening"]
+    },
+    "quick-bite": {
+      "label": "Hungry",
+      "types": ["fast_food", "cafe", "bakery", "sandwich_shop", "pizza_place"],
+      "minRating": 3.8,
+      "priceRange": [1, 2],
+      "timePreference": ["afternoon", "late-night"]
+    },
+    "budget": {
+      "label": "Chill",
+      "types": ["cheap_eats", "food_court", "street_food", "bakery", "cafe"],
+      "minRating": 3.5,
+      "priceRange": [1, 2],
+      "timePreference": ["morning", "afternoon", "evening"]
+    }
+  },
+  "crowdAvoidance": {
+    "enabled": true,
+    "reviewThresholds": {
+      "high": 500,
+      "medium": 300
+    },
+    "penalties": {
+      "high": -10,
+      "medium": -5
+    }
+  },
+  "personalization": {
+    "enabled": true,
+    "maxBoost": 15,
+    "boostPerMatch": 5
+  },
+  "radiusExpansion": {
+    "minResults": 5,
+    "maxAttempts": 3,
+    "maxRadius": 15000
+  }
+}
